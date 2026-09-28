@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "Minea → Zendrop Cost Finder",
+  "version": "0.1.0",
+  "description": "Show Zendrop product cost on Minea product pages using your existing Zendrop session.",
+  "permissions": [],
+  "host_permissions": [
+    "https://app.minea.com/*",
+    "https://app.zendrop.com/*",
+    "https://file.zendrop.com/*",
+    "https://images.zendrop.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background/service-worker.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://app.minea.com/*"],
+      "js": ["src/content/minea.ts"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://app.zendrop.com/*"],
+      "js": ["src/content/zendrop.ts"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Minea → Zendrop Cost Finder",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Popup preview</title>
+    <link rel="stylesheet" href="../../src/popup/popup.css" />
+    <style>
+      html, body { background: #fff; color-scheme: light; }
+      body {
+        width: 280px;
+        margin: 0;
+        padding: 0;
+        color: #1c1f24;
+        background: #fff;
+      }
+      main {
+        width: 280px;
+        background: #fff;
+        color: #1c1f24;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .label { color: #5b616b; opacity: 1; }
+      #refresh { background: #eef0f3; color: #1c1f24; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">Minea → Zendrop</p>
+      <section>
+        <p class="label">Current product</p>
+        <p id="product">Acacia Teak Wood Long-Handled Cooking Spatula Set</p>
+      </section>
+      <section>
+        <p class="label">Zendrop</p>
+        <p id="match">Acacia Teak Wood Long-Handled Cooking Spatula Set</p>
+      </section>
+      <section>
+        <p class="label">Cost</p>
+        <p id="cost">$0.65</p>
+      </section>
+      <section>
+        <p class="label">Confidence</p>
+        <p id="confidence">high · 94%</p>
+      </section>
+      <p id="status" class="status">Ready</p>
+      <div class="actions">
+        <button id="open" type="button">Open product</button>
+        <button id="refresh" type="button">Refresh</button>
+      </div>
+    </main>
+  </body>
+</html>

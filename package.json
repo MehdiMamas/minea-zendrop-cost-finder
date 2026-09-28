@@ -1,0 +1,28 @@
+{
+  "name": "minea-zendrop-cost-finder",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Chrome extension that shows Zendrop product cost on Minea product pages using the existing Zendrop browser session.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MehdiMamas/minea-zendrop-cost-finder"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.3",
+    "@types/chrome": "^0.0.304",
+    "happy-dom": "^17.4.4",
+    "typescript": "^5.8.2",
+    "vite": "^5.4.14",
+    "vitest": "^2.1.9"
+  }
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minea product preview</title>
+    <link rel="stylesheet" href="../../src/content/card.css" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: #f4f5f7;
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        color: #1c1f24;
+      }
+      .page {
+        width: 1080px;
+        margin: 0 auto;
+        padding: 28px 32px 40px;
+      }
+      .crumb {
+        font-size: 12px;
+        color: #6b7280;
+        margin-bottom: 16px;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 28px;
+        align-items: start;
+      }
+      .hero {
+        width: 280px;
+        height: 280px;
+        border-radius: 16px;
+        background:
+          radial-gradient(circle at 30% 25%, #fff7ed, transparent 40%),
+          linear-gradient(160deg, #fde68a, #d97706 55%, #78350f);
+        border: 1px solid #e5e7eb;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero span {
+        position: absolute;
+        left: 36px;
+        top: 78px;
+        width: 28px;
+        height: 150px;
+        background: #f5f0e6;
+        border-radius: 8px 8px 4px 4px;
+        transform: rotate(-18deg);
+        box-shadow: 18px 8px 0 #efe6d4, 36px 16px 0 #e7dcc6;
+      }
+      .hero span::after {
+        content: "";
+        position: absolute;
+        left: -18px;
+        top: -28px;
+        width: 64px;
+        height: 36px;
+        background: #b45309;
+        border-radius: 8px 18px 6px 6px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 22px;
+        line-height: 1.3;
+      }
+      .meta {
+        display: flex;
+        gap: 16px;
+        font-size: 13px;
+        color: #4b5563;
+        margin-bottom: 18px;
+      }
+      .panel {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 16px 18px;
+        margin-bottom: 16px;
+      }
+      .panel h2 {
+        margin: 0 0 8px;
+        font-size: 13px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #6b7280;
+      }
+      .panel p { margin: 0; font-size: 14px; line-height: 1.5; }
+      #mz-card {
+        --mz-bg: #ffffff;
+        --mz-bg-soft: #f6f7f8;
+        --mz-text: #1c1f24;
+        --mz-muted: #5b616b;
+        --mz-line: #e4e7eb;
+        --mz-accent: #0f766e;
+        --mz-accent-soft: #d7f3ef;
+        --mz-danger: #b42318;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="crumb">Library / Kitchen / Product details</div>
+      <div class="layout">
+        <div class="hero" aria-hidden="true"><span></span></div>
+        <div>
+          <h1>Acacia Teak Wood Long-Handled Cooking Spatula Set</h1>
+          <div class="meta"><span>Ads · 1,240</span><span>Reach · 86.4K</span><span>Shop · US</span></div>
+          <section class="panel">
+            <h2>Product details</h2>
+            <p>Visible title used for the Zendrop search. The extension ignores Minea’s generic page slogan.</p>
+          </section>
+          <section id="mz-card">
+            <div class="mz-header">
+              <div class="mz-kicker">Zendrop Cost Finder</div>
+              <button class="mz-close" type="button" aria-label="Dismiss">×</button>
+            </div>
+            <p class="mz-label">Minea product</p>
+            <p class="mz-title">Acacia Teak Wood Long-Handled Cooking Spatula Set</p>
+            <p class="mz-label">Ranked Zendrop matches · 3 results</p>
+            <ul class="mz-list">
+              <li class="mz-match mz-match-top">
+                <div class="mz-thumb" style="background:linear-gradient(160deg,#fde68a,#b45309)"></div>
+                <div class="mz-match-body">
+                  <div class="mz-match-head">
+                    <span class="mz-rank">TOP 1</span>
+                    <span class="mz-badge">high · 94%</span>
+                  </div>
+                  <p class="mz-match-name">Acacia Teak Wood Long-Handled Cooking Spatula Set – Perfect for Mixing &amp; Serving</p>
+                  <div class="mz-meta-row">
+                    <span class="mz-meta strong">Cost $0.65</span>
+                    <span class="mz-meta">Display $0.75</span>
+                    <span class="mz-meta">Shipping (US): Not retrieved</span>
+                  </div>
+                  <button class="mz-link" type="button">Open product</button>
+                </div>
+              </li>
+              <li class="mz-match mz-match-top">
+                <div class="mz-thumb" style="background:linear-gradient(160deg,#e7e5e4,#78716c)"></div>
+                <div class="mz-match-body">
+                  <div class="mz-match-head">
+                    <span class="mz-rank">TOP 2</span>
+                    <span class="mz-badge">medium · 71%</span>
+                  </div>
+                  <p class="mz-match-name">7-Piece Wooden Kitchen Utensil Set</p>
+                  <div class="mz-meta-row">
+                    <span class="mz-meta strong">Cost $2.98</span>
+                    <span class="mz-meta">Display $3.43</span>
+                    <span class="mz-meta">Shipping (US): Not retrieved</span>
+                  </div>
+                  <button class="mz-link" type="button">Open product</button>
+                </div>
+              </li>
+              <li class="mz-match mz-match-top">
+                <div class="mz-thumb" style="background:linear-gradient(160deg,#d6d3d1,#57534e)"></div>
+                <div class="mz-match-body">
+                  <div class="mz-match-head">
+                    <span class="mz-rank">TOP 3</span>
+                    <span class="mz-badge">low · 46%</span>
+                  </div>
+                  <p class="mz-match-name">Silicone Spatula with Wood Handle</p>
+                  <div class="mz-meta-row">
+                    <span class="mz-meta strong">Cost $1.12</span>
+                    <span class="mz-meta">Display $1.40</span>
+                    <span class="mz-meta">Shipping (US): Not retrieved</span>
+                  </div>
+                  <button class="mz-link" type="button">Open product</button>
+                </div>
+              </li>
+            </ul>
+            <div class="mz-actions">
+              <button class="mz-btn" type="button">Search Zendrop</button>
+              <button class="mz-btn" type="button">Refresh</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
