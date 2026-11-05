@@ -21,4 +21,4 @@ A Chrome extension (Vite + `@crxjs/vite-plugin`, TypeScript, MV3) that shows Zen
 ## Gotchas
 - No token or Bearer header: the background worker uses `credentials: "include"`. Do not add stored tokens or the `cookies` permission.
 - `.env*` (except `.env.example`) and `productpageminea.html` are gitignored.
-- No CI workflows in this repo.
+- CI (`.github/workflows/ci.yml`) runs `pnpm install --frozen-lockfile`, `pnpm test` and `pnpm run build` on pushes to main and on pull requests. There is no lint script.
