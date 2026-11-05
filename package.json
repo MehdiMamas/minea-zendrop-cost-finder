@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "packageManager": "pnpm@12.16.1",
   "description": "Chrome extension that shows Zendrop product cost on Minea product pages using the existing Zendrop browser session.",
   "repository": {
     "type": "git",

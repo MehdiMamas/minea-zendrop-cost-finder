@@ -4,10 +4,10 @@
 A Chrome extension (Vite + `@crxjs/vite-plugin`, TypeScript, MV3) that shows Zendrop product cost on Minea product pages using the Zendrop session already in the browser. README.md covers behavior and limits; `Minea_Zendrop_Cost_Finder_Extension_Spec.md` has the MVP design notes.
 
 ## Setup and commands
-- `npm install`
-- `npm run dev`: Vite, rebuilds into `dist/`
-- `npm run build`: `tsc --noEmit && vite build`; load `dist/` via `chrome://extensions` > Developer mode > Load unpacked
-- `npm test`: `vitest run` (`npm run test:watch` to watch; happy-dom for DOM tests)
+- `pnpm install`
+- `pnpm run dev`: Vite, rebuilds into `dist/`
+- `pnpm run build`: `tsc --noEmit && vite build`; load `dist/` via `chrome://extensions` > Developer mode > Load unpacked
+- `pnpm test`: `vitest run` (`pnpm run test:watch` to watch; happy-dom for DOM tests)
 - Reload the extension in Chrome after each rebuild.
 
 ## Where things live
