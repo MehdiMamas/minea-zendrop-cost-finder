@@ -1,8 +1,10 @@
 # Minea → Zendrop Cost Finder
 
-Chrome extension that puts Zendrop product cost on a Minea product page. It searches with the Zendrop session already in the browser, ranks the matches, and opens the product page for the one you pick.
+See what a Minea product costs on Zendrop, right on the Minea product page.
 
 ![Zendrop matches on a Minea product page](docs/screenshots/product-page.png)
+
+Chrome extension that puts Zendrop product cost on a Minea product page. It searches with the Zendrop session already in the browser, ranks the matches, and opens the product page for the one you pick.
 
 ## What you see
 
@@ -20,9 +22,7 @@ Shipping is not loaded, so the card will not call a product profitable. The sell
 ## Install
 
 ```bash
-npm install
-npm test
-npm run build
+pnpm install && pnpm build
 ```
 
 1. Open `chrome://extensions`.
@@ -35,7 +35,7 @@ You need to be logged into Zendrop and Minea in that Chrome profile. The extensi
 Zendrop session unavailable — open Zendrop and log in
 ```
 
-`npm run dev` rebuilds into `dist/` while you work. Reload the extension in Chrome after a rebuild.
+`pnpm run dev` rebuilds into `dist/` while you work. Reload the extension in Chrome after a rebuild.
 
 ## How matching works
 
@@ -56,8 +56,8 @@ The background service worker sends that request with `credentials: "include"`. 
 ## Develop
 
 ```bash
-npm test
-npm run build
+pnpm test
+pnpm run build
 ```
 
 | Path | Role |
